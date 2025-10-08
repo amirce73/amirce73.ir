@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eaa3d1b3-d48a-43a9-80a8-8869c449ef0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/p-w-mobile.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/freelancer-free-lite/index.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="32sIYRpu8KziOqO92joX39CClvb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/ALFA/WebstormProjects/personal web/freelancer-free-lite",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ALFA\WebstormProjects\personal web\freelancer-free-lite" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ALFA\WebstormProjects\p-w-mobile\assets\images" />
+      <recent name="C:\Users\ALFA\WebstormProjects\personal web" />
+      <recent name="C:\Users\ALFA\WebstormProjects\personal web\freelancer-free-lite" />
+      <recent name="C:\Users\ALFA\WebstormProjects\personal web\freelancer-free-lite\assets\images" />
+      <recent name="C:\Users\ALFA\WebstormProjects\personal web\freelancer-free-lite\assets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eaa3d1b3-d48a-43a9-80a8-8869c449ef0b" name="Changes" comment="" />
+      <created>1758202900680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758202900680</updated>
+      <workItem from="1758202901913" duration="134000" />
+      <workItem from="1758223939325" duration="7822000" />
+      <workItem from="1758269581426" duration="3362000" />
+      <workItem from="1758292720906" duration="5704000" />
+      <workItem from="1758410056733" duration="3585000" />
+      <workItem from="1758413701076" duration="510000" />
+      <workItem from="1758452992652" duration="602000" />
+      <workItem from="1758454636218" duration="1049000" />
+      <workItem from="1758472186114" duration="565000" />
+      <workItem from="1758481576397" duration="5886000" />
+      <workItem from="1758539787403" duration="255000" />
+      <workItem from="1758542667769" duration="2314000" />
+      <workItem from="1758547069278" duration="30000" />
+      <workItem from="1758549227042" duration="269000" />
+      <workItem from="1758678604807" duration="7523000" />
+      <workItem from="1758732059570" duration="14000" />
+      <workItem from="1759232604043" duration="2246000" />
+      <workItem from="1759239346722" duration="5566000" />
+      <workItem from="1759309119415" duration="17105000" />
+      <workItem from="1759332578311" duration="139000" />
+      <workItem from="1759332725173" duration="1474000" />
+      <workItem from="1759342534679" duration="2558000" />
+      <workItem from="1759400674559" duration="314000" />
+      <workItem from="1759490328324" duration="128000" />
+      <workItem from="1759585403741" duration="1337000" />
+      <workItem from="1759752280643" duration="677000" />
+      <workItem from="1759920050026" duration="1007000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
