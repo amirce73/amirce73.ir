@@ -188,7 +188,11 @@ function showImage() {
     if (!imgHolder) return;
     imgHolder.innerHTML = `
             <img src="${originalImgSrc}" alt="${captionText}" class="clickable-img">
-            <button type="button" class="project-play-btn" aria-label="Play Video">&#9658;</button>
+            <button type="button" class="project-play-btn" aria-label="Play Video">
+                <svg viewBox="0 0 24 24" width="100%" height="100%" fill="currentColor" style="display: block; max-width: 24px; max-height: 24px; margin: auto;">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
         `;
     const btn = imgHolder.querySelector('.project-play-btn');
     if (btn) {
