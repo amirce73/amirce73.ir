@@ -181,7 +181,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 const imgHolder = document.querySelector('#first_slide .project-img-holder');
 const originalImgSrc = "/assets/images/PVZ4.png";
-const videoSrc = "/freelancer-free-lite/assets/images/";
+const videoSrc = "/freelancer-free-lite/assets/images/pvz4.mp4";
 const captionText = "PVZ4";
 
 function showImage() {
