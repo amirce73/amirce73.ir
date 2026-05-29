@@ -1307,6 +1307,10 @@ p {
     color: #fff;
 }
 
+.single_service:hover .service_content p span{
+    color: black;
+}
+
 /*===========================
    10.CALL TO ACTION css 
 ===========================*/
@@ -1830,4 +1834,8 @@ p {
 
 .slider:focus ~ .keys {
     opacity: 0.8;
+}
+
+.service_span {
+    color: deepskyblue;
 }
