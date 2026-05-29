@@ -1,8 +1,52 @@
 $(function () {
 
+    const experienceSlides = ["clubs", "hearts", "spades", "diamonds"];
+    let currentExperienceIndex = 0;
+
+    function showExperienceSlide(index) {
+        // مدیریت چرخش بی‌نهایت اسلایدر (Loop)
+        if (index < 0) index = experienceSlides.length - 1;
+        if (index >= experienceSlides.length) index = 0;
+        currentExperienceIndex = index;
+
+        // انتخاب و فعال کردن رادیو باتن مربوطه
+        const radioBtn = document.getElementById(experienceSlides[currentExperienceIndex]);
+        if (radioBtn) {
+            radioBtn.checked = true;
+        }
+    }
+
+    // پیدا کردن دکمه‌های ناوبری چپ و راست
+    const prevBtn = document.querySelector('#experience .nav-btn.prev');
+    const nextBtn = document.querySelector('#experience .nav-btn.next');
+
+    // افزودن رویداد کلیک به دکمه قبلی
+    if (prevBtn) {
+        prevBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // جلوگیری از رفتارهای ناخواسته فرم
+            showExperienceSlide(currentExperienceIndex - 1);
+        });
+    }
+
+    // افزودن رویداد کلیک به دکمه بعدی
+    if (nextBtn) {
+        nextBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // جلوگیری از رفتارهای ناخواسته فرم
+            showExperienceSlide(currentExperienceIndex + 1);
+        });
+    }
+
+    // مقداردهی اولیه برای نمایش اسلاید اول
+    showExperienceSlide(0);
+
+
     "use strict";
 
     //===== Prealoder
+
+    $(window).on('load', function (event) {
+        $('.preloader').delay(500).fadeOut(500);
+    });
 
 
     //===== Sticky
@@ -16,7 +60,15 @@ $(function () {
         }
     });
 
+    var mobileCheck = false;
 
+    if (window.innerWidth <= 767) {
+        mobileCheck = true;
+    }
+
+    if (mobileCheck) {
+
+    }
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
@@ -128,8 +180,8 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 const slide1 = document.getElementById('slide1');
-const originalImgSrc = "assets/images/PVZ4.png";
-const videoSrc = "assets/images/pvz4.mp4";
+const originalImgSrc = "/assets/images/PVZ4.png";
+const videoSrc = "/freelancer-free-lite/assets/images/";
 const captionText = "PVZ4";
 
 function showImage() {
