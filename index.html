@@ -143,7 +143,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-7">
                     <div class="header_hero_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s"
                          data-wow-delay="1.8s">
-                        <img src="assets/images/amir2.jpg" alt="hero" class="amir2">
+                        <div class="hero-img-wrapper">
+                            <img src="assets/images/amir2.jpg" alt="hero" class="amir2">
+                        </div>
                     </div> <!-- header hero image -->
                 </div>
             </div> <!-- row -->
@@ -255,126 +257,45 @@
 <!--====== ABOUT PART ENDS ======-->
 
 
-<!-- ================= Modern Minimal Certificates Slider ================= -->
-<section id="certificates-slider"
-         style="height: 120%;  background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url('assets/backgrounds/abstract-geometric-border-connecting-dots-digital-technology-vector-design.jpg'); padding:80px 20px; position:relative;">
-    <div style="max-width:1200px; margin:0 auto; text-align:center; margin-bottom:40px;">
-        <h2 style="color:#007bff; font-size:2.5rem; margin-bottom:10px;">My Certificates</h2>
+<section id="certificates-slider" class="cert-section">
+    <div class="cert-title-container">
+        <h2>My Certificates</h2>
     </div>
 
-    <!-- Slider Container -->
-    <div class="slider-wrapper"
-         style="position:relative; max-width:900px; margin:0 auto; overflow:hidden; border-radius:15px; height:550px;">
-        <div class="slides-container" style="display:flex; transition:transform 0.6s ease; height:100%;">
-            <!-- Slide 1 -->
-            <div class="slide" style="min-width:100%; position:relative; text-align:center; margin-bottom:30px;">
-                <!-- عکس کامل -->
-                <img src="assets/images/CS50x.png" alt="Certificate 1"
-                     style="width:100%; max-height:500px; object-fit:contain; border-radius:15px; display:block; margin:0 auto;">
-
-                <!-- متن زیر عکس -->
-                <div style="
-                    text-align:center; /* متن وسط */
-                    display:block; /* div بزرگ شود */
-                    background: rgba(0, 123, 255, 0.25);
-                    background-image: repeating-linear-gradient(
-                        45deg,
-                        rgba(0,123,255,0.25),
-                        rgba(0,123,255,0.25) 5px,
-                        rgba(255,255,255,0.05) 5px,
-                        rgba(255,255,255,0.05) 10px
-                    );
-                    color:white;
-                    font-weight:600;
-                    border-radius:15px;
-                    padding:10px 25px;
-                    backdrop-filter: blur(5px);
-                    max-width:fit-content;
-                    margin:15px auto 0 auto; /* وسط div */
-                    font-size: 10px;
-                ">
-                    CS50x Harvard Programing(Online Course)
+    <div class="slider-wrapper">
+        <div class="slides-container">
+            <div class="slide">
+                <img src="assets/images/CS50x.png" alt="Certificate 1" class="cert-img">
+                <div class="cert-badge">
+                    CS50x Harvard Programming (Online Course)
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="slide" style="min-width:100%; position:relative; overflow:hidden;">
-                <img src="" alt="UPDATING"
-                     style="width:100%; height:100%; object-fit:cover; border-radius:15px; cursor:pointer;">
-                <div class="overlay" style="
-                    position:absolute;
-                    bottom:20px;
-                    left:50%;
-                    transform:translateX(-50%);
-                    background: rgba(0, 123, 255, 0.25);
-                    background-image: repeating-linear-gradient(
-                        45deg,
-                        rgba(0,123,255,0.25),
-                        rgba(0,123,255,0.25) 5px,
-                        rgba(255,255,255,0.05) 5px,
-                        rgba(255,255,255,0.05) 10px
-                    );
-                    color:white;
-                    padding:15px 30px;
-                    font-size:1.2rem;
-                    font-weight:600;
-                    border-radius:15px;
-                    text-align:center;
-                    opacity:0;
-                    transform:translate(-50%,20px);
-                    transition:opacity 0.4s, transform 0.4s;
-                    backdrop-filter: blur(5px);
-                    white-space: nowrap;
-                    ">
+            <div class="slide">
+                <div class="updating-box">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>UPDATING</span>
+                </div>
+                <div class="overlay">
                     CSS Certificate - May 2023
                 </div>
             </div>
-            <!-- Slide 3 -->
-            <div class="slide" style="min-width:100%; position:relative; overflow:hidden;">
-                <img src="" alt="UPDATING"
-                     style="width:100%; height:100%; object-fit:cover; border-radius:15px; cursor:pointer;">
-                <div class="overlay" style="
-                    position:absolute;
-                    bottom:20px;
-                    left:50%;
-                    transform:translateX(-50%);
-                    background: rgba(0, 123, 255, 0.25);
-                    background-image: repeating-linear-gradient(
-                        45deg,
-                        rgba(0,123,255,0.25),
-                        rgba(0,123,255,0.25) 5px,
-                        rgba(255,255,255,0.05) 5px,
-                        rgba(255,255,255,0.05) 10px
-                    );
-                    color:white;
-                    padding:15px 30px;
-                    font-size:1.2rem;
-                    font-weight:600;
-                    border-radius:15px;
-                    text-align:center;
-                    opacity:0;
-                    transform:translate(-50%,20px);
-                    transition:opacity 0.4s, transform 0.4s;
-                    backdrop-filter: blur(5px);
-                    white-space: nowrap;
-                    ">
+
+            <div class="slide">
+                <div class="updating-box">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>UPDATING</span>
+                </div>
+                <div class="overlay">
                     JavaScript Certificate - June 2023
                 </div>
             </div>
         </div>
 
-        <!-- Navigation Buttons -->
-        <button class="prev"
-                style="position:absolute; top:50%; left:10px; transform:translateY(-50%); font-size:2.5rem; background:rgba(0,0,0,0.3); color:white; border:none; border-radius:50%; padding:10px; cursor:pointer; transition:0.3s;">
-            ❮
-        </button>
-        <button class="next"
-                style="position:absolute; top:50%; right:10px; transform:translateY(-50%); font-size:2.5rem; background:rgba(0,0,0,0.3);  color:white; border:none; border-radius:50%; padding:10px; cursor:pointer; transition:0.3s;">
-            ❯
-        </button>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </div>
 </section>
-
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox"
      style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:0.3s; z-index:100;">
@@ -453,7 +374,7 @@
                     <div class="service_content">
                         <h4 class="service_title"><a href="#">Front-End</a></h4>
                         <p>Building interactive, responsive web interfaces using modern <span
-                                class="service_span">JS/React/Tailwind</span> frameworks.</p>
+                                class="service_span">HTML/CSS/JS/React/Tailwind</span> frameworks.</p>
                     </div>
                 </div> <!-- single service -->
             </div>
@@ -476,7 +397,7 @@
                     </div>
                     <div class="service_content">
                         <h4 class="service_title"><a href="#">JavaFx & Java</a></h4>
-                        <p>Developing robust desktop applications with <span class="service_span">JavaFX & Java</span></p>
+                        <p>Developing robust desktop applications with <span class="service_span">JavaFX & Java</span>.</p>
                         <br>
                     </div>
                 </div> <!-- single service -->
@@ -524,250 +445,70 @@
 
 
 <!--====== CALL TO ACTION PART START ======-->
-
-<section id="experience" class="call_to_action_area" style="position: relative; height: 100vh; overflow: hidden;">
-    <form class="slider_form" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; white-space: nowrap;">
+<section id="experience" class="projects_slider_section">
+    <form class="slider_form">
 
         <input type="radio" name="fancy" value="clubs" id="clubs" checked>
         <input type="radio" name="fancy" value="hearts" id="hearts">
         <input type="radio" name="fancy" value="spades" id="spades">
         <input type="radio" name="fancy" value="diamonds" id="diamonds">
 
-        <!-- اسلایدها -->
-        <label for="clubs" class="slide" id="first_slide">
-            <div class="slide-content" id="slide1">
-                <img src="assets/images/PVZ4.png" alt="PVZ4" class="clickable-img">
-                <button class="play-btn">&#9658;</button>
+        <label for="clubs" class="project-slide" id="first_slide">
+            <div class="project-card-glass">
+                <div class="project-img-holder">
+                    <img src="assets/images/PVZ4.png" alt="PVZ4 Project" class="clickable-img">
+                    <button type="button" class="project-play-btn" aria-label="Play Video">&#9658;</button>
+                </div>
+                <div class="project-details">
+                    <h3>PVZ4 Remake</h3>
+                    <p class="sub-text">
+                        <i class="fab fa-java"></i> JavaFX Architecture & Development
+                    </p>
+                </div>
             </div>
-            <p class="slide-caption">
-                PVZ4
-                <br>
-                <span class="sub-text" style="font-weight: bold;">
-                    <link rel="stylesheet"
-                          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-                    <i class="fab fa-java" aria-hidden="true"></i>
-                    JavaFx Project
-                    <i class="fab fa-java" aria-hidden="true"></i>
-                </span>
-            </p>
         </label>
 
-        <label for="hearts" class="slide" id="second_slide">
-            <div class="slide-content">
-                <img src="assets/images/favicon.png" alt="projects">
+        <label for="hearts" class="project-slide" id="second_slide">
+            <div class="project-card-glass">
+                <div class="project-img-holder placeholder-holder">
+                    <i class="fa-solid fa-code-hourglass animated-hourglass"></i>
+                </div>
+                <div class="project-details">
+                    <h3>Project 2</h3>
+                    <p class="coming-soon-tag">Coming Soon</p>
+                </div>
             </div>
-            <p class="slide-caption">
-                Project 2
-                <br>
-                <span class="sub-text" style="font-weight: bold;">
-                    Coming Soon
-                </span>
-            </p>
         </label>
 
-        <label for="spades" class="slide" id="third_slide">
-            <div class="slide-content">
-                <img src="assets/images/favicon.png" alt="projects">
+        <label for="spades" class="project-slide" id="third_slide">
+            <div class="project-card-glass">
+                <div class="project-img-holder placeholder-holder">
+                    <i class="fa-solid fa-code-hourglass animated-hourglass"></i>
+                </div>
+                <div class="project-details">
+                    <h3>Project 3</h3>
+                    <p class="coming-soon-tag">Coming Soon</p>
+                </div>
             </div>
-            <p class="slide-caption">
-                Project 3
-                <br>
-                <span class="sub-text" style="font-weight: bold;">
-                    Coming Soon
-                </span>
-            </p>
         </label>
 
-        <label for="diamonds" class="slide" id="fourth_slide">
-            <div class="slide-content">
-                <img src="assets/images/favicon.png" alt="projects">
+        <label for="diamonds" class="project-slide" id="fourth_slide">
+            <div class="project-card-glass">
+                <div class="project-img-holder placeholder-holder">
+                    <i class="fa-solid fa-code-hourglass animated-hourglass"></i>
+                </div>
+                <div class="project-details">
+                    <h3>Project 4</h3>
+                    <p class="coming-soon-tag">Coming Soon</p>
+                </div>
             </div>
-            <p class="slide-caption">
-                Project 4
-                <br>
-                <span class="sub-text" style="font-weight: bold;">
-                    Coming Soon
-                </span>
-            </p>
         </label>
 
-        <!-- دکمه‌های ناوبری - داخل فرم -->
-        <button type="button" class="nav-btn prev">❮</button>
-        <button type="button" class="nav-btn next">❯</button>
+        <button type="button" class="nav-btn prev" aria-label="Previous Project">❮</button>
+        <button type="button" class="nav-btn next" aria-label="Next Project">❯</button>
 
     </form>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* همه اسلایدها روی هم قرار دارند */
-        #experience label.slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            z-index: 1;
-            transition: opacity 0.5s;
-        }
-
-        #experience label#first_slide {
-            background-image: url("assets/backgrounds/Dark Abstract Black Minimal 4k Laptop HD Wallpaper.jpg");
-        }
-
-        #experience label#second_slide {
-            background-image: url("assets/backgrounds/Html Background Color Codes(1).jpg");
-        }
-
-        #experience label#third_slide {
-            background-image: url("assets/backgrounds/Cool Background.png");
-        }
-
-        #experience label#fourth_slide {
-            background-image: url("assets/backgrounds/Best Background For Html Wallpaper.jpg");
-        }
-
-        /* اسلاید فعال */
-        #clubs:checked ~ label[for="clubs"],
-        #hearts:checked ~ label[for="hearts"],
-        #spades:checked ~ label[for="spades"],
-        #diamonds:checked ~ label[for="diamonds"] {
-            opacity: 1;
-            z-index: 10;
-        }
-
-        .slide-content {
-            position: relative;
-            background: #fff;
-            padding: 15px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            text-align: center;
-            margin-top: 5vh;
-        }
-
-        .slide-content img {
-            display: block;
-            max-width: 70vw;
-            max-height: 70vh;
-            border-radius: 15px;
-        }
-
-        .play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 50px;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            border: none;
-            border-radius: 50%;
-            padding: 20px;
-            cursor: pointer;
-            display: none;
-        }
-
-        .slide-content:hover .play-btn {
-            display: block;
-        }
-
-        .slide-caption {
-            font-size: 40px;
-            font-family: "Book Antiqua", serif;
-            margin-top: 30px;
-            color: red;
-        }
-
-        .sub-text {
-            margin-top: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-        }
-
-        /* رادیوها مخفی */
-        #experience form input {
-            position: absolute;
-        }
-
-        /* دکمه‌های ناوبری */
-        .nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.4);
-            border: none;
-            color: white;
-            font-size: 3rem;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            z-index: 20;
-            border-radius: 50%;
-        }
-
-        .nav-btn:hover {
-            background: deepskyblue;
-        }
-
-        .nav-btn.prev {
-            left: 20px;
-        }
-
-        .nav-btn.next {
-            right: 20px;
-        }
-    </style>
-
-    <script>// اسلایدر Experience
-    const experienceSlides = ["clubs", "hearts", "spades", "diamonds"];
-    let currentExperienceIndex = 0;
-
-    function showExperienceSlide(index) {
-        if (index < 0) index = experienceSlides.length - 1;
-        if (index >= experienceSlides.length) index = 0;
-        currentExperienceIndex = index;
-
-        // انتخاب radio button مربوطه
-        const radioBtn = document.getElementById(experienceSlides[currentExperienceIndex]);
-        if (radioBtn) {
-            radioBtn.checked = true;
-        }
-    }
-
-    // اضافه کردن event listeners به دکمه‌ها
-    document.addEventListener('DOMContentLoaded', function () {
-        const prevBtn = document.querySelector('#experience .nav-btn.prev');
-        const nextBtn = document.querySelector('#experience .nav-btn.next');
-
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                showExperienceSlide(currentExperienceIndex - 1);
-            });
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                showExperienceSlide(currentExperienceIndex + 1);
-            });
-        }
-
-        // نمایش اسلاید اول
-        showExperienceSlide(0);
-    });
-    </script>
 </section>
-
 
 <!--====== CALL TO ACTION PART ENDS ======-->
 
