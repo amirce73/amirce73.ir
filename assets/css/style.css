@@ -2195,6 +2195,7 @@ p {
         width: 36px;
         height: 36px;
         font-size: 1.2rem;
+        padding-bottom: 1px;
         background: rgba(15, 23, 42, 0.8); /* تیره تر برای دید بهتر روی تصاویر کوچک */
     }
     .cert-section .prev { left: 8px; }
@@ -2424,8 +2425,8 @@ p {
         height: 45px;
         font-size: 1.2rem;
     }
-    .slider_form .nav-btn.prev { left: 15px; }
-    .slider_form .nav-btn.next { right: 15px; }
+    .slider_form .nav-btn.prev { left: 15px; padding-bottom: 1px;}
+    .slider_form .nav-btn.next { right: 15px; padding-bottom: 1px;}
 }
 
 @media (max-width: 767.98px) {
