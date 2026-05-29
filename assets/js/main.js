@@ -179,29 +179,38 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("clubs").checked = true; // انتخاب اولیه اسلاید
 });
 
-const slide1 = document.getElementById('slide1');
+const imgHolder = document.querySelector('#first_slide .project-img-holder');
 const originalImgSrc = "/assets/images/PVZ4.png";
 const videoSrc = "/freelancer-free-lite/assets/images/";
 const captionText = "PVZ4";
 
 function showImage() {
-    slide1.innerHTML = `
-        <img src="${originalImgSrc}" alt="${captionText}" class="clickable-img">
-        <button class="play-btn">&#9658;</button>
-    `;
-    const btn = slide1.querySelector('.play-btn');
-    btn.addEventListener('click', showVideo);
+    if (!imgHolder) return;
+    imgHolder.innerHTML = `
+            <img src="${originalImgSrc}" alt="${captionText}" class="clickable-img">
+            <button type="button" class="project-play-btn" aria-label="Play Video">&#9658;</button>
+        `;
+    const btn = imgHolder.querySelector('.project-play-btn');
+    if (btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            showVideo();
+        });
+    }
 }
 
 function showVideo() {
-    slide1.innerHTML = `
-        <video controls autoplay style="width:70%; border-radius:15px;" id="video1">
-            <source src="${videoSrc}" type="video/mp4">
-            مرورگر شما ویدیو را پشتیبانی نمی‌کند.
-        </video>
-    `;
+    if (!imgHolder) return;
+    imgHolder.innerHTML = `
+            <video controls autoplay style="width:100%; height:340px; object-fit:cover; border-radius:18px;" id="video1">
+                <source src="${videoSrc}" type="video/mp4">
+                مرورگر شما ویدیو را پشتیبانی نمی‌کند.
+            </video>
+        `;
     const video = document.getElementById('video1');
-    video.addEventListener('ended', showImage);
+    if (video) {
+        video.addEventListener('ended', showImage);
+    }
 }
 
 // شروع با عکس
