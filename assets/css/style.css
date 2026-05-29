@@ -2471,3 +2471,640 @@ p {
     .slider_form .nav-btn.prev { left: calc(50% - 60px); }
     .slider_form .nav-btn.next { right: calc(50% - 60px); }
 }
+
+
+
+
+/* ==========================================================================
+   MODERN NEON FOOTER STYLE
+   ========================================================================== */
+.modern_footer_area {
+    background: #070a12; /* آبی بسیار تیره همگام با کل سایت */
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+    border-top: 1px solid rgba(56, 189, 248, 0.15); /* خط نئونی بسیار ملایم بالایی */
+    box-shadow: inset 0 20px 30px -10px rgba(15, 23, 42, 0.9);
+}
+
+.footer_logo {
+    margin-bottom: 35px;
+}
+
+.footer_logo img {
+    max-height: 45px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.2));
+    transition: transform 0.3s ease;
+}
+.footer_logo img:hover {
+    transform: scale(1.05);
+}
+
+/* استایل آیکون‌های شبکه اجتماعی */
+.modern_footer_area .footer_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.modern_footer_area .footer_social li a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+/* افکت فوق‌العاده جذاب هوور دکمه‌های اجتماعی */
+.modern_footer_area .footer_social li a:hover {
+    color: #fff;
+    background: #007bff;
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+}
+
+/* باکس ایمیل شیشه‌ای */
+.footer_email_box {
+    margin-bottom: 35px;
+}
+
+.footer_email_box .email {
+    color: #38bdf8; /* رنگ آبی آسمانی نئون */
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    padding: 8px 22px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+/* منوی فوتر */
+.modern_footer_area .footer_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.modern_footer_area .footer_menu li a {
+    color: #94a3b8;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* انیمیشن خط زیر لینک‌های منو هنگام هوور */
+.modern_footer_area .footer_menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 0; height: 1px;
+    background: #38bdf8;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.modern_footer_area .footer_menu li a:hover {
+    color: #fff;
+}
+
+.modern_footer_area .footer_menu li a:hover::after {
+    width: 100%;
+}
+
+/* بخش کپی رایت پایینی */
+.footer_credit {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+}
+
+.footer_credit .credit {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.footer_credit .credit a {
+    color: #94a3b8;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_credit .credit a:hover {
+    color: #38bdf8;
+}
+
+/* ==========================================================================
+   فوتر کاملاً بهینه شده برای موبایل
+   ========================================================================== */
+@media (max-width: 767.98px) {
+    .modern_footer_area {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .footer_logo {
+        margin-bottom: 25px;
+    }
+
+    .modern_footer_area .footer_social {
+        margin-bottom: 25px;
+        gap: 15px;
+    }
+
+    .footer_email_box .email {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .modern_footer_area .footer_menu {
+        gap: 15px 25px; /* تنظیم فواصل لینک‌ها در صورت شکستن خط در موبایل */
+        margin-bottom: 30px;
+    }
+
+    .modern_footer_area .footer_menu li a {
+        font-size: 14px;
+    }
+
+    .footer_credit .credit {
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================================================
+   MODERN SERVICES SECTION - GLASSMORPHISM RE-DESIGN
+   ========================================================================== */
+.modern_services_section {
+    background: #090d16; /* تم آبی بسیار تاریک هماهنگ با پروژه */
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* استایل تیتر سکشن */
+.modern_services_section .text_cyan {
+    color: #38bdf8 !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.modern_services_section .text_white {
+    color: #ffffff !important;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.neon_line_divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #38bdf8);
+    margin: 15px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+/* فیکس کردن ارتفاع یکسان کارت‌ها بر اساس Flexbox */
+.match-height-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.match-height-cards > div {
+    display: flex;
+}
+
+/* بدنه اصلی کارت شیشه‌ای لوکس */
+.service_card_glass {
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(56, 189, 248, 0.12);
+    border-radius: 24px;
+    padding: 35px 25px;
+    width: 100%; /* پر کردن کل باکس گرید */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* لایه نوری مخفی پشت کارت که در هاور روشن می‌شود */
+.service_card_glass::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* افکت فوق‌العاده زیبای Hover روی کارت */
+.service_card_glass:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56, 189, 248, 0.35);
+    box-shadow:
+            0 30px 60px -20px rgba(0, 0, 0, 0.6),
+            0 0 30px 2px rgba(56, 189, 248, 0.1);
+}
+
+.service_card_glass:hover::before {
+    opacity: 1;
+}
+
+/* استایل نئونی آیکون‌ها */
+.service_card_glass .service_icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(56, 189, 248, 0.06);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+    font-size: 28px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.05);
+}
+
+.service_card_glass:hover .service_icon {
+    background: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+    transform: scale(1.05) rotate(5deg);
+}
+
+/* متون داخل کارت */
+.service_card_glass .service_title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease;
+}
+
+.service_card_glass:hover .service_title {
+    color: #38bdf8;
+}
+
+.service_card_glass p {
+    color: #94a3b8;
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* کلمات کلیدی هایلایت شده نئونی */
+.service_card_glass .service_span {
+    color: #e2e8f0;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 13.5px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    margin: 2px 0;
+}
+
+/* ==========================================================================
+   M O B I L E   R E S P O N S I V E
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .modern_services_section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .modern_services_section .text_white {
+        font-size: 26px;
+    }
+    .service_card_glass {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .service_card_glass {
+        padding: 25px 15px;
+    }
+    .service_card_glass .service_title {
+        font-size: 18px;
+    }
+    .service_card_glass p {
+        font-size: 13.5px;
+    }
+}
+
+/* ==========================================================================
+   MODERN ABOUT SECTION - NEON & GLASSMORPHISM RE-DESIGN
+   ========================================================================== */
+.modern_about_section {
+    background: #000f24; /* هماهنگ با پس‌زمینه تیره سایت */
+    padding-top: 90px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+/* افکت نئونی برای عکس سمت چپ */
+.about_image_holder {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+.about_image_holder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5));
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about_image_holder:hover img {
+    transform: scale(1.02) translateY(-5px);
+}
+
+/* هاله نوری نئونی متحرک در پشت عکس شما */
+.about_image_holder .glow_background {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; height: 80%;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* باکس شیشه‌ای محتوای درباره من */
+.about_content_glass {
+    background: rgba(15, 23, 42, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+}
+
+.about_content_glass .text_cyan {
+    color: #38bdf8 !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.about_content_glass .text_white {
+    color: #ffffff !important;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.neon_line_left {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #38bdf8);
+    margin: 12px 0 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.about_description {
+    color: #94a3b8;
+    font-size: 15.5px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about_description strong {
+    color: #ffffff;
+}
+
+/* هایلایت نئونی کلمات کلیدی داخل متن */
+.highlight_text {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   🎯 استایل پیشرفته اسکیل‌بارهای نئونی (Progress Bars)
+   ========================================================================== */
+.about_skills .skill_item {
+    margin-bottom: 22px;
+}
+
+.skill_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.skill_title {
+    color: #f1f5f9;
+    font-size: 14.5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.icon-spacing {
+    color: #38bdf8;
+    margin-right: 8px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.skill_sub {
+    color: #64748b;
+    font-size: 12.5px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.skill_percentage p {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* بدنه خاکستری کل نوار */
+.skill_bar {
+    width: 100%;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* ریل اصلی پرکننده نوار */
+.skill_bar .bar_inner {
+    width: 100%;
+    height: 100%;
+}
+
+/* نوار درخشان نئونی متحرک */
+.skill_bar .bar {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #38bdf8);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
+    width: 0; /* مقدار اصلی به صورت دینامیک توسط jQuery پر می‌شود */
+    transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+/* ==========================================================================
+   R E S P O N S I V E
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .modern_about_section {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+    .about_content_glass {
+        padding: 25px;
+        margin-top: 30px;
+    }
+    .about_content_glass .text_white {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about_content_glass {
+        padding: 20px 15px;
+    }
+    .skill_title {
+        font-size: 13.5px;
+        flex-wrap: wrap;
+    }
+    .about_description {
+        font-size: 14px;
+    }
+}
+
+/* ==========================================================================
+   🏫 UNIVERSITY BADGE & LOGO STYLE (ADD TO THE END OF CSS FILE)
+   ========================================================================== */
+.university_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(56, 189, 248, 0.04);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    padding: 10px 18px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+/* افکت حرکت ملایم به راست هنگام هوور روی باکس */
+.university_badge:hover {
+    background: rgba(56, 189, 248, 0.08);
+    border-color: rgba(56, 189, 248, 0.3);
+    transform: translateX(5px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+}
+
+/* فیکس کردن ابعاد لوگوی دانشگاه و ایجاد هاله نوری دور آن */
+.university_badge .uni_logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.3));
+    transition: transform 0.4s ease;
+}
+
+/* بزرگ‌نمایی و چرخش فانتزی لوگو هنگام هوور */
+.university_badge:hover .uni_logo {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* استایل و تراز کردن متون کنار لوگو */
+.university_badge .uni_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.university_badge .uni_text span {
+    color: #64748b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.university_badge .uni_text strong {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 2px;
+    transition: color 0.3s ease;
+}
+
+/* تغییر رنگ نام دانشگاه به آبی نئونی هنگام رفتن موس روی آن */
+.university_badge:hover .uni_text strong {
+    color: #38bdf8;
+}
+
+/* ==========================================================================
+   ریسپانسیو کردن بج دانشگاه برای نمایش بی نقص در موبایل
+   ========================================================================== */
+@media (max-width: 575.98px) {
+    .university_badge {
+        padding: 8px 14px;
+        gap: 10px;
+    }
+    .university_badge .uni_logo {
+        width: 35px;
+        height: 35px;
+    }
+    .university_badge .uni_text strong {
+        font-size: 13px;
+    }
+}
